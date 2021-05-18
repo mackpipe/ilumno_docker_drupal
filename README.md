@@ -27,7 +27,7 @@ Al finalizar el proceso ejecutado por el archivo **ilumno.sh**  se evidnecia un 
 
 ## Notas
 - El drupal que se instala esta instalado como un proyecto composer, no es el oficial que trae la imagen de dockerhub **drupal:8-apache**
-- Al cargar la contenedor de Mysql se corre un backup de drupal, ya listo para trabajar con los modulos necesarios
+- Al cargar el contenedor de Mysql se corre un backup de drupal, ya listo para trabajar con los modulos necesarios
 - Los modulos de ilumno_programs y ilumno_programs_rest se descargan una vez se haya cargado la contenedora de Drupal, se hace a través del archivo entrypoint.sh y se obtienen de repositorios de GitHub, estan disponibles en git como proyectos independientes en las siguientes direcciones por si se desea validar su contenido
   - https://github.com/mackpipe/ilumno_programs.git
   - https://github.com/mackpipe/ilumno_programs_rest.git
