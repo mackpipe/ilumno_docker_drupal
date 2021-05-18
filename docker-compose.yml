@@ -1,0 +1,36 @@
+version: "3.1"
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: ${MYSQL_CONTAINER}
+    restart: unless-stopped
+    # 1G al max_allowed_packet
+    command: --max_allowed_packet=1G
+    hostname: ${MYSQL_HOSTNAME}
+
+    ports:
+        - 3309:3306 #Port Host(local) : Port Container
+    volumes:
+      - mysql-ilumno:/var/lib/mysql
+      - ./backup/:/docker-entrypoint-initdb.d # Database backup, it is loaded when starting the container
+    env_file:
+      - ./ilumno.env # File where the environment variables are located
+    networks:
+      - ilumno-net
+  drupal:
+    image: ${DOCKER_IMAGE}
+    container_name: ${DOCKER_CONTAINER_NAME}
+    ports:
+      - ${DOCKER_PORT}:80
+    #volumes:
+    #  - C:/Proyectos/DockerVolumenes/ilumno:/var/www/html
+    env_file:
+      - ./ilumno.env
+    networks:
+      - ilumno-net
+    restart: always
+volumes:
+  mysql-ilumno:
+networks:
+  ilumno-net:
