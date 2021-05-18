@@ -12,7 +12,8 @@
 
 Existe un archivo llamado **ilumno.env** en el cual se almacenan las variables de ambiente usadas en todo el proceso, cambielas a su desición si es el caso. por defecto se dejaron las apropiadas para que el contenedor de la aplicación drupal cargue correctamente.
 
-Al finalizar el proceso ejecutado por el archivo **ilumno.sh**  se evidnecia un estado final en la siguiente imagen
+Al finalizar el proceso ejecutado por el archivo **ilumno.sh**  se evidencia un estado final en la siguiente imagen
+
 ![image](https://user-images.githubusercontent.com/1072188/118704080-5ca5f400-b7dc-11eb-8da3-12d01bb0ad8e.png)
 
 ## Probar la aplicación.
