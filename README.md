@@ -63,8 +63,11 @@ repositorio de Git?
     - `docker rmi Image Image`
  - ¿Qué comando Dockerfile modifica las variables de entorno dentro de los contenedores 
 creados a partir de las imágenes? 
+  - `docker build -t container --build-arg GITHUB_TOKEN=21ef899cfc286b7f413bfe0ef556990afaa7fb4f . ` usando build-arg cambiamos el valor de una variable de entorno
  -  ¿Qué comando Dockerfile define qué puertos de contenedor exponer?   
+   - `docker run --publish 8000:8000 node-docker`  
  -  ¿Qué comando de Dockerfile especifica comandos para realizar cambios en su imagen y 
+   -  `docker commit [CONTAINER_ID] [new_image_name]`
 posteriormente en los contenedores que se muestran desde esta imagen?
  - ¿Qué lenguaje utiliza docker-compose para configurar los servicios de la aplicación
    - YAML
