@@ -66,7 +66,7 @@ creados a partir de las imágenes?
  -  ¿Qué comando de Dockerfile especifica comandos para realizar cambios en su imagen y 
 posteriormente en los contenedores que se muestran desde esta imagen?
  - ¿Qué lenguaje utiliza docker-compose para configurar los servicios de la aplicación
-   - **YAML**
+   - YAML
 
 ### Practica
 - Se debe crear un proyecto en Drupal 8 el cual debe tener configurado los archivos 
