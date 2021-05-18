@@ -32,3 +32,39 @@ Al finalizar el proceso ejecutado por el archivo **ilumno.sh**  se evidnecia un 
   - https://github.com/mackpipe/ilumno_programs.git
   - https://github.com/mackpipe/ilumno_programs_rest.git
  
+ 
+ ## Prueba Tecnica
+ ### Teoria
+ - Qué comando se requiere para crear un repositorio en Git?
+   - `git init`
+ - Cuál es el comando utilizado para listar los cambios (commits) que han producido en el 
+repositorio de Git?
+   - `git log -n 10` Muestr los ultimos 10 commits 
+ - ¿Qué comando permite listar todas las ramas (branches) disponibles localmente en Git?
+   -  `git branch`  
+ - ¿Cuál de los siguientes comandos crea una nueva rama local llamada develop en Git?  
+   - `git checkout -b develop` 
+ - ¿Qué comando permite saltar el área de preparación en Git?  
+   - `git add <file>`  `git rm -cached <file>` Adiciona los archivos nuevos o modificacos al area de preparación (Staging) , y git rm elimina el archivo
+ - ¿Con qué comando se crea un tag en git con el número de versión y descripción?
+   - `git tag -a v1.4 -m "my version 1.4" `
+ - ¿Para qué sirve el comando “git status -s”?
+   - Muestra los cambios ocurridos en el proyecto, pero en formato corto, por defecto git status esta en formato largo
+ - ¿Qué hace el comando “git show”?
+   - Muestra información detallada del repositorio, 
+ - ¿Qué es un commit con la clasificación “fix”? 
+   - Son los commit que estan destinados a corregir errores en la base de del codigo fuente 
+ - ¿Qué hace el comando git stash?
+   -  Almacena los cambios en un directorio de trabajo momentaneo. para luego ser retomados y regresarlos al directorio oficial de trabajo
+ - ¿Qué comando de Docker sirve para conectar un contenedor a una red  
+    - `docker run --network=<network-name>`
+ - ¿Qué comando de Docker se usa para eliminar una o más imágenes? 
+    - `docker rmi Image Image`
+ - ¿Qué comando Dockerfile modifica las variables de entorno dentro de los contenedores 
+creados a partir de las imágenes? 
+    - Falta
+ -  ¿Qué comando Dockerfile define qué puertos de contenedor exponer?   
+ -  ¿Qué comando de Dockerfile especifica comandos para realizar cambios en su imagen y 
+posteriormente en los contenedores que se muestran desde esta imagen?
+ - ¿Qué lenguaje utiliza docker-compose para configurar los servicios de la aplicación
+ - YAML
